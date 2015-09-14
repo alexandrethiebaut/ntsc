@@ -73,10 +73,15 @@
 	.next-event {
 		text-align: center;
 		// height: 170px;
-		opacity: .33;
-		@include transition( opacity, 150ms, ease-out );
+		div {
+			opacity: .33;
+			@include transition( opacity, 150ms, ease-out );
+
+		}
 		&:hover {
-			opacity: 1;
+			div {
+				opacity: 1;
+			}
 		}
 		img {
 			display: inline-block;
