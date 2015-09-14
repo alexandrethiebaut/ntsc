@@ -1,0 +1,32 @@
+@media #{$small-up} {
+
+	.loop-content {
+
+		.post-categories {
+			display: block;
+		}
+		h2 {
+			margin: 0.9375rem 0;
+		}
+		img {
+			text-align: center;
+		}
+		p {
+			font-size: 0.8125rem;
+		}
+		
+		footer {
+			a {
+				font-family: $font-pixel;
+				font-size: 0.5rem;
+				display: inline-block;
+				color: inherit;
+				@include transition( all, 150ms, ease-out);
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,88 @@
+@media #{$small-up} {
+
+	.section-title {
+		color: $white;
+		span {
+			font-family: $font-pixel;
+			font-size: 0.5rem;
+			margin-left: 5px;
+		}
+		h1 {
+			color: $white;
+			font-size: 3rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			line-height: 1.2;
+			margin-bottom: 0;
+		}
+	}
+
+	.post-meta {
+		margin-left: 5px;
+		a {
+			text-decoration: underline;
+			@include transition( all, 150ms, ease-out);
+		}
+	}
+
+	.post-categories {
+		font-size: 0.625rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 25px;
+		li {
+			margin-right: 0.1875rem;
+		}
+		a {
+			@include transition( all, 150ms, ease-out);
+			display: inline-block;
+			background-color: #bf262b;
+			color: $white;
+			margin: 0;
+			padding: 0.25rem;
+			&:hover {
+				background-color: $primary-color;
+			}
+		}
+	}
+
+	.tags {
+		margin-top: 20px;
+		font-family: $font-pixel;
+		font-size: 0.5rem;
+		color: $iron;
+		a {
+			line-height: 0.875rem;
+			color: $iron;
+			&:hover {
+				color: $monsoon;
+			}
+		}
+	}
+
+	aside.bloc-author {
+		margin-top: 20px;
+		img {
+			width: 20%;
+			height: 20%;
+			border-radius: 100%;
+			display: inline-block;
+		}
+		.about {
+			width: 80%;
+			float: right;
+			display: inline-block;
+			padding: 0 20px;
+			h3 {
+				font-size: 1.5rem;
+			}
+			p {
+				font-size: 0.8125rem;
+				color: $monsoon;
+			}
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -68,6 +68,7 @@
 @import "site/global"; 
 @import "site/wp-admin";
 @import "site/header";
-// @import "site/content";
-// @import "site/sidebar";
+@import "site/content";
+@import "site/loop";
+@import "site/sidebar";
 @import "site/footer";

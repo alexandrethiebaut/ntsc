@@ -6,17 +6,32 @@
 	<?php if ( $next_event_query->have_posts() ) : ?>
 
 		<?php while ( $next_event_query->have_posts() ) : $next_event_query->the_post(); ?>
+
 			<div class="row padding20">
 				<div class="small-12 columns next-event">
-					<a href="<?php the_permalink(); ?>"><?php has_post_thumbnail() ? the_post_thumbnail('event-thumb') : ''; ?></a>
-					<div class="bloc-txt">
-						<span>Prochain événement :</span>
-						<h3><?php $meta_date = get_post_custom_values('Date'); echo $meta_date[0]; ?></h3>
-						<h2><?php the_title(); ?></h2>
-						<a href="<?php the_permalink(); ?>">En savoir plus <i class="fa fa-chevron-right"></i></a>
+					<div class="row collapse">
+					<?php if (has_post_thumbnail() ): ?>
+						<a href="<?php the_permalink(); ?>" class="small-4 columns">
+							<?php has_post_thumbnail() ? the_post_thumbnail('event-thumb') : ''; ?>
+						</a>
+						<div class="bloc-txt small-8 columns">
+							<span>Prochain événement :</span>
+							<h3><?php $meta_date = get_post_custom_values('Date'); echo $meta_date[0]; ?></h3>
+							<h2><?php the_title(); ?></h2>
+							<a href="<?php the_permalink(); ?>">En savoir plus <i class="fa fa-chevron-right"></i></a>
+						</div>
+					<?php else : ?>
+						<div class="bloc-txt small-12 columns">
+							<span>Prochain événement :</span>
+							<h3><?php $meta_date = get_post_custom_values('Date'); echo $meta_date[0]; ?></h3>
+							<h2><?php the_title(); ?></h2>
+							<a href="<?php the_permalink(); ?>">En savoir plus <i class="fa fa-chevron-right"></i></a>
+						</div>
+					<?php endif ?>
 					</div>
 				</div>
 			</div>
+
 		<?php endwhile; ?>
 
 		<?php wp_reset_postdata(); ?>

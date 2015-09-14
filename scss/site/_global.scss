@@ -43,8 +43,20 @@ img.alignleft {
 	margin: rem-calc(7) rem-calc(24) rem-calc(7) 0;
 }
 
+.wp-caption {
+	width: 100% !important;
+}
+
 .wp-caption.alignleft {
 	margin: rem-calc(7) rem-calc(14) rem-calc(7) 0;
+}
+
+.wp-caption-text {
+	padding: 5px;
+	border: 1px solid $gainsboro;
+	font-size: 10px;
+	color: $monsoon;
+	font-style: italic;
 }
 
 blockquote.alignright,
@@ -101,7 +113,29 @@ body {
 		color: $primary-color;
 		text-decoration: underline;
 	}
-	img, p {
-		margin-bottom: rem-calc(20);
+	// img:not(.wp-smiley), p {
+	// 	margin-bottom: rem-calc(20);
+	// }
+	img:not(.wp-smiley) {
+    	box-shadow: 0px 0px 50px 0px rgba($black, .25) inset;
+    	border: 3px solid $gainsboro;
 	}
+}
+
+// Placeholder, input, etc. font 
+::-webkit-input-placeholder {
+	font-family: $font-pixel;
+	font-size: 8px;
+}
+::-moz-placeholder {
+	font-family: $font-pixel;
+	font-size: 8px;
+}
+::-moz-placeholder {
+	font-family: $font-pixel;
+	font-size: 8px;
+}
+:-ms-input-placeholder {
+	font-family: $font-pixel;
+	font-size: 8px;
 }

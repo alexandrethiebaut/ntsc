@@ -70,7 +70,7 @@
 		img {
 			display: inline-block;
 		}
-		
+
 		.bloc-txt {
 			padding-left: 40px;
 			display: inline-block;
@@ -95,7 +95,7 @@
 				color: $primary-color;
 			}
 			span, a {
-				font-family: "Press Start 2p";
+				font-family: $font-pixel;
 				font-size: 0.5rem;
 				margin-bottom: 10px;
 			}
