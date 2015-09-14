@@ -24,12 +24,14 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to Gruntfile.js and see lines 67-88
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.js', array('jquery'), '5.5.1', true );
+	wp_register_script( 'troispointszero', get_template_directory_uri() . '/js/custom/troispointzero.js', array('jquery'), '1.0');
 
 	// Enqueue all registered scripts
 	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'fastclick' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'foundation' );
+	wp_enqueue_script( 'troispointszero' );
 
 	}
 

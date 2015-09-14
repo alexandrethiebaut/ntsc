@@ -1,6 +1,8 @@
-@media #{$small-up} {
-
+//	Settings
 	$navbar-height: rem-calc(50);
+	$margin-bottom-navbar: rem-calc(95);
+
+@media #{$small-up} {
 
 	#top {
 		background-color: $white;
@@ -8,6 +10,11 @@
 		padding-bottom: 0.625rem;
 		position: relative;
 		z-index: 333;
+		// div {
+		// 	height: 130px;
+		// 	display: flex;
+		// 	align-items: center;
+		// }
 	}
 
 	.home-button {
@@ -28,7 +35,7 @@
 			-o-box-shadow: 0px 0px 10px 5px rgba($black, .2);
 			box-shadow: 0px 0px 10px 5px rgba($black, .2);
 		position: relative;
-		margin-bottom: 5.9375rem;
+		margin-bottom: $margin-bottom-navbar;
 		z-index: 222;
 		ul {
 			li {
@@ -47,6 +54,10 @@
 				}
 			}
 		}
+	}
+
+	.header-nav {
+		display: inline-block;
 	}
 
 	.social-networks {
@@ -111,4 +122,20 @@
 			}
 		}
 	}
+}
+
+// Required for troispointzero.js
+@media #{$large-up} {
+	
+	.is-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999999;
+	}
+	.added-margin {
+		margin-top: $navbar-height + $margin-bottom-navbar;
+	}
+
 }
