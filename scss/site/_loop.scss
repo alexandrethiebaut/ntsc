@@ -4,11 +4,17 @@
 
 		.post-categories {
 			display: block;
+			a {
+				&:hover {
+					background-color: $secondary-color;
+				}
+			}
 		}
 		h2 {
 			margin: 0.9375rem 0;
 		}
 		img {
+			@include light-shadow();
 			text-align: center;
 		}
 		p {

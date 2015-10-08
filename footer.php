@@ -8,7 +8,7 @@
 	
 </footer>
 
-<div id="back-to-top">
+<div id="back-to-top" style="display: none;">
 	<a href="#top"><i class="fa fa-chevron-up"></i></a>
 </div>
 

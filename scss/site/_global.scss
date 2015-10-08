@@ -115,8 +115,8 @@ body {
 		text-decoration: underline;
 	}
 	img:not(.wp-smiley) {
-		box-shadow: 0px 0px 50px 0px rgba($gainsboro, .66) inset;
-		border: 2px solid rgba($gainsboro, .66);
+		@include light-shadow;
+		margin-bottom: 25px;
 	}
 }
 
