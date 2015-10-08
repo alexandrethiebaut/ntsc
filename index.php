@@ -11,10 +11,10 @@
 				<div class="small-12 columns next-event">
 					<div class="row collapse">
 					<?php if (has_post_thumbnail() ): ?>
-						<a href="<?php the_permalink(); ?>" class="small-4 columns">
+						<!-- <a href="<?php the_permalink(); ?>" class="small-4 columns">
 							<?php has_post_thumbnail() ? the_post_thumbnail('event-thumb') : ''; ?>
-						</a>
-						<div class="bloc-txt small-8 columns">
+						</a> -->
+						<div class="bloc-txt small-12 columns">
 							<span>Prochain événement :</span>
 							<h3><?php $meta_date = get_post_custom_values('Date'); echo $meta_date[0]; ?></h3>
 							<h2><?php the_title(); ?></h2>

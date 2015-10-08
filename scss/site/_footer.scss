@@ -34,37 +34,41 @@
 	}
 
 	#back-to-top {
-		position: absolute;
-		top: 0;
-		right: 0;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
 		a {
 			display: inline-block;
-			border: solid 1px $white;
-			background: $oil;
+			// border: solid 1px $white;
+			background: $primary-color;
 			color: $white;
-			padding: 0.625rem;
+			padding: 15px;
 			line-height: 0;
+			@include transition( transform, 200ms, ease-out);
+			&:hover {
+				transform: translateY(-10px);
+			}
 		}
-		&:before {
-			content: "Back to top";
-			font-size: 0.5rem;
-			font-family: $font-pixel;
-			text-transform: uppercase;
-			color: $white;
-			overflow: hidden;
-			position: absolute;
-			right: 38px;
-			width: 0;
-			height: 38px;
-			line-height: 38px;
-			opacity: 0;
-			@include transition(all, 250ms, ease-out );
-			white-space: nowrap;
-		}
-		&:hover:before {
-			opacity: 1;
-			width: 100px;
-		}
+		// &:before {
+		// 	content: "Back to top";
+		// 	font-size: 0.5rem;
+		// 	font-family: $font-pixel;
+		// 	text-transform: uppercase;
+		// 	color: $white;
+		// 	overflow: hidden;
+		// 	position: absolute;
+		// 	right: 38px;
+		// 	width: 0;
+		// 	height: 38px;
+		// 	line-height: 38px;
+		// 	opacity: 0;
+		// 	@include transition(all, 250ms, ease-out );
+		// 	white-space: nowrap;
+		// }
+		// &:hover:before {
+		// 	opacity: 1;
+		// 	width: 100px;
+		// }
 	}
 
 }

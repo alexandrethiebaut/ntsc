@@ -4,12 +4,14 @@
 	<div class="small-12 columns">
 		<h5>Copyright © 2015 - <?php bloginfo('title'); ?></h5>
 		<?php ntsc_menu_footer(); ?>
-		<div id="back-to-top">
-			<a href="#top"><i class="fa fa-chevron-up"></i></a>
-		</div>
 	</div>
 	
 </footer>
+
+<div id="back-to-top">
+	<a href="#top"><i class="fa fa-chevron-up"></i></a>
+</div>
+
 	<?php do_action( 'foundationpress_layout_end' ); ?>
 	</div>
 </div>
