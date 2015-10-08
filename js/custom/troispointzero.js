@@ -15,7 +15,10 @@ $(document).ready(function() {
 
 	$(document).scroll(function() { 
 
-		if ( $(this).scrollTop() > 900 ) {
+		// Se déclenche quand on scroll et qu'on dépasse seuil (env. 400 px)
+		var seuil = 400;
+
+		if ( $(this).scrollTop() > seuil ) {
 			$('#back-to-top').fadeIn('fast');
 		}
 		else {
