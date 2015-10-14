@@ -36,5 +36,10 @@ $(document).ready(function() {
 		return false;
 	});
 
+	//Menu mobile
+	$(".main-menu").click(function(event) {
+		$(".header-nav").slideToggle('slow');
+	});
+
 });
 

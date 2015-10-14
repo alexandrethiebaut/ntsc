@@ -41,10 +41,10 @@
 	<nav class="main-menu">
 		<div class="row padding20">
 			<div class="small-10 columns">
-				<a class="home-button" href="<?php bloginfo('url') ?>" title="Accueil"><i class="fa fa-home"></i></a>
+				<a class="home-button show-for-large-up" href="<?php bloginfo('url') ?>" title="Accueil"><i class="fa fa-home"></i></a>
 				<?php ntsc_main_menu(); ?>
 			</div>
-			<div class="social-networks">
+			<div class="social-networks show-for-large-up">
 				<a href="https://www.facebook.com/AssociationNtsc" title="Page Facebook"><i class="fa fa-facebook"></i></a>
 				<a href="https://twitter.com/AssociationNTSC" title="Twitter @AssociationNTSC"><i class="fa fa-twitter"></i></a>
 				<a href="https://www.youtube.com/user/AssociationNTSC" title="Chaîne Youtube"><i class="fa fa-youtube-play"></i></a>
