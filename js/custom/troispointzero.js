@@ -37,9 +37,7 @@ $(document).ready(function() {
 	});
 
 	//Menu mobile
-	$(".main-menu").click(function(event) {
-		$(".header-nav").slideToggle('slow');
-	});
-
+	
 });
+
 

@@ -37,6 +37,7 @@
 		position: fixed;
 		bottom: 20px;
 		right: 30px;
+		visibility: hidden;
 		a {
 			display: inline-block;
 			// border: solid 1px $white;
@@ -70,5 +71,10 @@
 		// 	width: 100px;
 		// }
 	}
+}
 
+@media #{$large-up} {
+	#back-to-top {
+		visibility: visible;
+	}
 }

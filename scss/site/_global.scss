@@ -81,7 +81,7 @@ body {
 	background-image: url(../assets/img/dot.png), url(../assets/img/bg.jpg);
 	background-size: auto, cover;
 	background-repeat: repeat, no-repeat;
-	background-position: 0 0,0 180px;
+	background-position: 0 0,0 80px;
 }
 
 .padding20 {
@@ -136,4 +136,10 @@ body {
 :-ms-input-placeholder {
 	font-family: $font-pixel;
 	font-size: 8px;
+}
+
+@media #{$small-up} {
+	.padding-none {
+		padding: 0 !important;
+	}
 }

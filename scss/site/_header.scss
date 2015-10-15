@@ -26,10 +26,40 @@
 		}
 	}
 
+	.nav-mobile {
+		.home-button {
+			padding-left: 20px;
+			width: 100%;
+		}
+		ul {
+			display: block;
+			background-color: $jet;
+			padding: rem-calc(10);
+			li {
+				display: block;
+				border-bottom: solid 1px rgba($white, 0.05);
+				&:last-of-type {
+					border-bottom: none !important;
+				}
+				a {
+					display: block;
+					width: 100%;
+					font-size: rem-calc(11) !important;
+					line-height: rem-calc(40) !important;
+					height: auto !important;
+					&:hover {
+						border: none !important;
+					}
+				}
+			}
+		}
+	}
+
 	.main-menu {
+		overflow: hidden; // Mobile
 		background-color: $jet;
 		height: $navbar-height;
-		line-height: $navbar-height + rem-calc(1);
+		line-height: $navbar-height;
 			-moz-box-shadow: 0px 0px 10px 5px rgba($black, .2);
 			-webkit-box-shadow: 0px 0px 10px 5px rgba($black, .2);
 			-o-box-shadow: 0px 0px 10px 5px rgba($black, .2);
@@ -44,10 +74,10 @@
 					text-transform: uppercase;
 					color: $white;
 					margin: 0 0.625rem;
-					line-height: $navbar-height + rem-calc(3);
+					line-height: $navbar-height;
 					height: $navbar-height;
 					display: inline-block;
-					&:hover, &.active {
+					&:hover {
 						border-bottom: solid 3px $primary-color;
 
 					}
@@ -130,7 +160,7 @@
 }
 
 // Required for troispointzero.js
-@media #{$large-up} {
+@media #{$small-up} {
 	
 	.is-fixed {
 		position: fixed;
@@ -143,4 +173,10 @@
 		margin-top: $navbar-height + $margin-bottom-navbar;
 	}
 
+}
+
+@media #{$large-up} {
+	.main-menu {
+		line-height: $navbar-height + rem-calc(1) !important;
+	}
 }
