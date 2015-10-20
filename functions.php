@@ -35,10 +35,12 @@ require_once('library/custom-header.php');
 
 
 // DEFINE
-define('CAT_NEXT_EVENT', 26);
+define('CAT_NEXT_EVENT', 26); 	//238
 	$exclure_cat_next_event = '-'.CAT_NEXT_EVENT;
 
-define('WELCOME_PAGE', 2);
+define('WELCOME_PAGE', 2);	//143
+
+
 
 //
 add_image_size('event-thumb', auto, 170, true);
