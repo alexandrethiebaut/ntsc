@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// Sticky nav
-	$(document).scroll(function	() {
+	$(document).scroll(function() {
 
 		if ( $(this).scrollTop() > 130 ) {
 			$('.main-menu').addClass('is-fixed');
@@ -37,7 +37,11 @@ $(document).ready(function() {
 	});
 
 	//Menu mobile
-	
+	$(".nav-mobile > .home-button").click(function(event) {
+		event.preventDefault();
+		$(".nav-mobile > .nav-mobile-slide").slideToggle('fast');
+	});
+
 });
 
 

@@ -56,7 +56,9 @@
 			<div class="hide-for-large-up">
 				<div class="nav-mobile">
 					<a class="home-button" href="#"><i class="fa fa-bars"></i></a>
-					<?php ntsc_main_menu(); ?>
+					<div class="nav-mobile-slide">
+						<?php ntsc_main_menu(); ?>
+					</div>
 				</div>
 			</div>
 
