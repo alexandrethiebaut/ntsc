@@ -56,7 +56,6 @@
 	}
 
 	.main-menu {
-		overflow: hidden; // Mobile
 		background-color: $jet;
 		height: $navbar-height;
 		line-height: $navbar-height;
@@ -73,7 +72,7 @@
 					font-size: 0.8125rem;
 					text-transform: uppercase;
 					color: $white;
-					margin: 0 0.625rem;
+					padding: 0 0.625rem;
 					line-height: $navbar-height;
 					height: $navbar-height;
 					display: inline-block;
@@ -84,6 +83,11 @@
 				}
 			}
 		}
+	}
+	
+	//Menu mobile (.slideToggle)
+	.nav-mobile-slide {
+		display: none;
 	}
 
 	.header-nav {
@@ -133,11 +137,11 @@
 				margin: 0;
 			}
 			h2 {
-				font-size: 3rem;
+				font-size: 2rem;
 				margin-bottom: 10px;
 			}
 			h3 {
-				font-size: 2rem;
+				font-size: 1.2rem;
 				color: $primary-color;
 			}
 			span, a {
@@ -178,5 +182,19 @@
 @media #{$large-up} {
 	.main-menu {
 		line-height: $navbar-height + rem-calc(1) !important;
+	}
+}
+
+// FONT REDUCTION ON SMALL DEVICES EN FAIT !
+@media #{$large-up} {
+	.next-event {
+		.bloc-text {
+			h2 {
+				font-size: 3rem;
+			}
+			h3 {
+				font-size: 2rem;
+			}
+		}
 	}
 }
