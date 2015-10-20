@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.jpg">
+		<meta property="og:image:type" content="image/jpeg">
+		<meta property="og:image:width" content="297">
+		<meta property="og:image:height" content="110">
 		<title><?php if ( is_category() ) {
 			echo single_cat_title(); echo ' - '; bloginfo( 'name' );
 		} elseif ( is_archive() ) {
