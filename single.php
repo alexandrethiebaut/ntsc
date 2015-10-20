@@ -42,9 +42,11 @@
 
 		<aside class="bloc-author">
 			<!-- Emplacement avatar -->
-			<?php echo get_wp_user_avatar(get_the_author_meta( 'ID' ), 'thumbnail'); ?>
+			<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+				<?php echo get_wp_user_avatar(get_the_author_meta( 'ID' ), 'thumbnail'); ?>
+			</a>
 			<div class="about">
-				<h3>À propos de <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></h3>
+				<h3><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></h3>
 				<p><?php the_author_meta('description'); ?></p>
 			</div>
 		</aside>
