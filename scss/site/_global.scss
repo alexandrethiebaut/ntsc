@@ -116,7 +116,10 @@ body {
 	}
 	img:not(.wp-smiley) {
 		@include light-shadow;
-		margin-bottom: 25px;
+		margin: 20px 0;
+	}
+	img.content-thumbnail {
+		margin-top: 0 !important;
 	}
 	iframe {
 		width: 100%;

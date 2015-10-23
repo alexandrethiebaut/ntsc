@@ -29,6 +29,7 @@
 
 			<?php the_category(); ?>
 			<div class="entry-content">
+				<?php the_post_thumbnail('loop-thumb', array('class' => 'content-thumbnail')); ?>
 				<?php the_content(); ?>
 			</div>
 
